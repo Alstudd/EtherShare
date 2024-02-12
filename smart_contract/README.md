@@ -19,3 +19,8 @@ npm i --save-dev hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomicla
 npx hardhat
 npx hardhat test
 ```
+
+## To deploy contract on ethereum: 
+```
+npx hardhat run scripts/deploy.js --network sepolia
+```
