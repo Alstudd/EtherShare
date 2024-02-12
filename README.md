@@ -1,1 +1,1 @@
-# EtherShare - An ETH crypto trading platform
+# EtherShare - An ETH crypto sharing platform
