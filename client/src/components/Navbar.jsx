@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center gap-6 p-4">
+    <nav className="w-full flex justify-center items-center lg:gap-24 gap-6 p-4">
       <div className="flex justify-center items-center">
         <img src={logo} alt="logo" className="w-16 cursor-pointer" />
         <h1 className="text-white text-4xl font-extrabold">EtherShare</h1>
