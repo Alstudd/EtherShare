@@ -55,7 +55,7 @@ const Transactions = () => {
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <h3 className="text-white text-3xl text-center my-2">
-            Latest Transactions
+            {transactions.length > 0 ? "Latest Transactions" : "Dummy Transactions"}
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">
@@ -64,9 +64,13 @@ const Transactions = () => {
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-10">
-          {transactions.map((transaction, i) => (
+          {transactions.length > 0 ? 
+          (transactions.map((transaction, i) => (
             <TransactionsCard key={i} {...transaction} />
-          )).reverse()}
+          )).reverse()) :
+          (dummyData.map((transaction, i) => (
+            <TransactionsCard key={i} {...transaction} />
+          )).reverse())}
         </div>
       </div>
     </div>
